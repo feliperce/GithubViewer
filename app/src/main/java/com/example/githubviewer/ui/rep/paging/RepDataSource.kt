@@ -1,4 +1,4 @@
-package com.example.githubviewer.ui.rep.view
+package com.example.githubviewer.ui.rep.paging
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -20,7 +20,7 @@ class RepDataSource(
     private val errorHandler: MutableLiveData<ErrorException>
 ) : PageKeyedDataSource<Int, Repo>() {
 
-    private val keyword = "language:java"
+    private val keyword = "language:kotlin"
 
     override fun loadInitial(
         params: LoadInitialParams<Int>,

@@ -4,17 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.paging.DataSource
-import androidx.paging.LivePagedListBuilder
-import androidx.paging.PagedList
 import com.example.githubviewer.R
-import com.example.githubviewer.data.model.Repo
 import com.example.githubviewer.data.remote.response.RepPrResponse
 import com.example.githubviewer.data.repository.RepRepository
 import com.example.githubviewer.data.statushandler.Status
 import com.example.githubviewer.exception.ErrorException
 import com.example.githubviewer.exception.GenericException
-import com.example.githubviewer.ui.rep.view.RepDataSource
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
